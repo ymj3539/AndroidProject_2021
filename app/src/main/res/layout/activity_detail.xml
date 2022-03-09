@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/colorHealBack">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+    </com.google.android.material.appbar.AppBarLayout> //툴바
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="제목자리"/>
+
+            <TextView
+                android:id="@+id/tvRegDateWriter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="작성자"/>
+            <TextView
+                android:id="@+id/tvRegDateWriter2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="날짜"/>
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="내용들어갈 자리"/>
+
+            <ImageView
+                android:id="@+id/tvImage"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:src="@drawable/kk"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/IncreaseHeal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="right"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/blove"/>
+
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 h"/>
+    </LinearLayout>
+
+    <include layout="@layout/contents_reply"></include>
+
+    //댓글 자리
+</LinearLayout>

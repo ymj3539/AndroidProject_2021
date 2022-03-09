@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">project3</string>
+
+    <string name="login_msg">로그인하세요!</string>
+</resources>

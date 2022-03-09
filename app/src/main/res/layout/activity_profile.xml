@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/colorHealBack"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+    </com.google.android.material.appbar.AppBarLayout> //툴바
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="프로필 이미지"/>
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/noperson"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="이미지를 클릭하여 변경해주세요."/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   학번과 학과를 선택해주세요."
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:dropDownWidth="200dp"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"
+                android:dropDownWidth="200dp"
+                android:spinnerMode="dropdown">
+            </Spinner>
+            </LinearLayout>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/etNickname"
+            android:hint="닉네임을 입력해주세요."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/colorhead"
+            android:text="저장"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:text="취소"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

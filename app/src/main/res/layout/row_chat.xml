@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msgLinear"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--android:textAlignment="textEnd" 왼쪽 , 오른쪽 정렬-->
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/TextView_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="nick"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/TextView_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_content_et"
+        android:padding="8dp"
+        android:text="content" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="time"
+        android:textSize="12sp" />
+
+</LinearLayout>

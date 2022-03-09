@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chatting.ChatMain"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorhead"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="스터디룸 LIST"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="50dp" />
+
+
+    <EditText
+        android:id="@+id/chatroom_et"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_content_et"
+        android:hint="스터디룸 검색"
+        android:inputType="text"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"/>
+
+
+    <Button
+        android:id="@+id/enter_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_background"
+        android:text="입장하기"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

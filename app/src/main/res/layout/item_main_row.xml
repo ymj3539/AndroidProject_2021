@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/itemProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/noperson"/>
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="제목 자리 입니다."/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/itemMore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/s"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/itemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:gravity="right|bottom"
+                android:text="2020-12-12"/>
+        </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kk"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/itemSummary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/itemHeart"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/love"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:layout_gravity="center"/>-->
+
+            <TextView
+                android:id="@+id/itemReply"
+                android:layout_width="27dp"
+                android:layout_height="24dp"
+                android:background="@drawable/b"
+                android:text="123"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingTop="4dp"
+                android:textColor="@color/colorHealRed"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="9dp"
+                    android:src="@drawable/blove"/>
+
+                <TextView
+                    android:id="@+id/itemCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 h"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

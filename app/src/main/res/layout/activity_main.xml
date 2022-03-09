@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorHealBack"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar"></include>
+        </com.google.android.material.appbar.AppBarLayout>
+        <include layout="@layout/contents"></include> //내용들어갈 자리
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/p"
+            android:backgroundTint="@color/colorhead"
+            android:visibility="invisible" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

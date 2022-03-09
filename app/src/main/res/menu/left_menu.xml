@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/menu_login"
+            android:icon="@drawable/blue"
+            android:title="로그인"></item>
+        <item
+            android:id="@+id/gotoPasswordResetButton"
+            android:icon="@drawable/purple"
+            android:title="비밀번호 재설정">
+        </item>
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/mint"
+            android:title="내정보수정"
+            android:visible="false">
+        </item>
+        <item
+            android:id="@+id/menu_chatting"
+            android:icon="@drawable/yellow"
+            android:title="스터디룸"
+            android:visible="false">
+        </item>
+        <item
+            android:id="@+id/menu_homepage"
+            android:icon="@drawable/orange"
+            android:title="느티아래">
+        </item>
+    </group>
+</menu>
